@@ -12,13 +12,14 @@ conda create --name yourEnvName
 conda activate yourEnvName
 
 ```
-* install pandas, scipy and scikit-learn, matplotlib, pyqt5
+* install pandas, scipy and scikit-learn, matplotlib, pyqt5 and pickle
 ```
 conda install scipy
 conda install pandas
 conda insta scikit-learn
 pip install matplotlib
 pip install pyqt5
+pip install pickle
 
 ```
 
