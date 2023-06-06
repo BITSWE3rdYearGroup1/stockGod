@@ -18,27 +18,27 @@ import pickle
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(800, 600)
+        MainWindow.resize(1240, 900)
         MainWindow.setAutoFillBackground(False)
         MainWindow.setStyleSheet("background-color:rgb(33, 47, 63);\n"
                                  "color:#FFF;")
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(40, 340, 41, 21))
+        self.label.setGeometry(QtCore.QRect(40, 550, 41, 21))
         self.label.setStyleSheet("")
         self.label.setObjectName("label")
         self.doubleSpinBox = QtWidgets.QDoubleSpinBox(
             parent=self.centralwidget)
-        self.doubleSpinBox.setGeometry(QtCore.QRect(110, 340, 221, 22))
+        self.doubleSpinBox.setGeometry(QtCore.QRect(110, 550, 221, 22))
         self.doubleSpinBox.setObjectName("doubleSpinBox")
         self.doubleSpinBox_2 = QtWidgets.QDoubleSpinBox(
             parent=self.centralwidget)
-        self.doubleSpinBox_2.setGeometry(QtCore.QRect(110, 390, 221, 22))
+        self.doubleSpinBox_2.setGeometry(QtCore.QRect(110, 650, 221, 22))
         self.doubleSpinBox_2.setObjectName("doubleSpinBox_2")
         self.doubleSpinBox_3 = QtWidgets.QDoubleSpinBox(
             parent=self.centralwidget)
-        self.doubleSpinBox_3.setGeometry(QtCore.QRect(110, 450, 221, 22))
+        self.doubleSpinBox_3.setGeometry(QtCore.QRect(110, 750, 221, 22))
         self.doubleSpinBox_3.setObjectName("doubleSpinBox_3")
 
         self.doubleSpinBox.setRange(0, 9999999.99)
@@ -55,55 +55,55 @@ class Ui_MainWindow(object):
         self.doubleSpinBox_3.setDecimals(8)
 
         self.label_2 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(40, 390, 41, 21))
+        self.label_2.setGeometry(QtCore.QRect(40, 650, 41, 21))
         self.label_2.setStyleSheet("")
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(40, 450, 51, 21))
+        self.label_3.setGeometry(QtCore.QRect(40, 750, 51, 21))
         self.label_3.setStyleSheet("color:#FFF;")
         self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_4.setGeometry(QtCore.QRect(40, 500, 41, 21))
+        self.label_4.setGeometry(QtCore.QRect(40, 850, 41, 21))
         self.label_4.setObjectName("label_4")
         self.lineEdit = QtWidgets.QLineEdit(parent=self.centralwidget)
-        self.lineEdit.setGeometry(QtCore.QRect(110, 500, 211, 22))
+        self.lineEdit.setGeometry(QtCore.QRect(110, 850, 211, 22))
         self.lineEdit.setStyleSheet("border:none;")
         self.lineEdit.setObjectName("lineEdit")
         self.graphicsView_3 = QtWidgets.QGraphicsView(
             parent=self.centralwidget)
-        self.graphicsView_3.setGeometry(QtCore.QRect(540, 20, 251, 261))
+        self.graphicsView_3.setGeometry(QtCore.QRect(830, 20, 400, 500))
         self.graphicsView_3.setStyleSheet("background-color:#fff;\n"
                                           "color:#212f3f;")
         self.graphicsView_3.setObjectName("graphicsView_3")
         self.pushButton = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(540, 490, 121, 31))
+        self.pushButton.setGeometry(QtCore.QRect(770, 550, 121, 31))
         self.pushButton.setStyleSheet("background-color:#fff;\n"
                                       "color:#212f3f;\n"
                                       "border-radius:10px;")
         self.pushButton.setObjectName("pushButton")
         self.textEdit = QtWidgets.QTextEdit(parent=self.centralwidget)
-        self.textEdit.setGeometry(QtCore.QRect(480, 380, 251, 31))
+        self.textEdit.setGeometry(QtCore.QRect(700, 650, 251, 31))
         self.textEdit.setStyleSheet("border:none;")
         self.textEdit.setObjectName("textEdit")
         self.textEdit_2 = QtWidgets.QTextEdit(parent=self.centralwidget)
-        self.textEdit_2.setGeometry(QtCore.QRect(480, 430, 251, 31))
+        self.textEdit_2.setGeometry(QtCore.QRect(700, 750, 251, 31))
         self.textEdit_2.setStyleSheet("border:none;")
         self.textEdit_2.setObjectName("textEdit_2")
         self.pushButton_2 = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_2.setGeometry(QtCore.QRect(560, 330, 93, 28))
+        self.pushButton_2.setGeometry(QtCore.QRect(770, 850, 93, 28))
         self.pushButton_2.setStyleSheet("background-color:#FFF;\n"
                                         "color:#212f3f;\n"
                                         "border-radius: 10px;")
         self.pushButton_2.setObjectName("pushButton_2")
         self.graphicsView_4 = QtWidgets.QGraphicsView(
             parent=self.centralwidget)
-        self.graphicsView_4.setGeometry(QtCore.QRect(280, 20, 251, 261))
+        self.graphicsView_4.setGeometry(QtCore.QRect(420, 20, 400, 500))
         self.graphicsView_4.setStyleSheet("background-color:#fff;\n"
                                           "color:#212f3f;")
         self.graphicsView_4.setObjectName("graphicsView_4")
         self.graphicsView_5 = QtWidgets.QGraphicsView(
             parent=self.centralwidget)
-        self.graphicsView_5.setGeometry(QtCore.QRect(20, 20, 251, 261))
+        self.graphicsView_5.setGeometry(QtCore.QRect(10, 20, 400, 500))
         self.graphicsView_5.setStyleSheet("background-color:#FFF;\n"
                                           "color:#212f3f;")
         self.graphicsView_5.setObjectName("graphicsView_5")
@@ -153,49 +153,52 @@ class Ui_MainWindow(object):
 
             with open('trained_model.pkl', 'rb') as file:
                 model = pickle.load(file)
+            try:  
+                # Extract the required columns
+                high = df['High']
+                low = df['Low']
+                volume = df['Volume']
+                close = model.predict(df)
 
-            # Extract the required columns
-            high = df['High']
-            low = df['Low']
-            volume = df['Volume']
-            close = model.predict(df)
+                # Plot High vs Close
+                figure1 = plt.figure()
+                plt.plot(close, high, 'r.')
+                plt.xlabel('Close')
+                plt.ylabel('High')
 
-            # Plot High vs Close
-            figure1 = plt.figure()
-            plt.plot(close, high, 'r.')
-            plt.xlabel('Close')
-            plt.ylabel('High')
+                # Plot Low vs Close
+                figure2 = plt.figure()
+                plt.plot(close, low, 'g.')
+                plt.xlabel('Close')
+                plt.ylabel('Low')
 
-            # Plot Low vs Close
-            figure2 = plt.figure()
-            plt.plot(close, low, 'g.')
-            plt.xlabel('Close')
-            plt.ylabel('Low')
+                # Plot Volume vs Close
+                figure3 = plt.figure()
+                plt.plot(close, volume, 'b.')
+                plt.xlabel('Close')
+                plt.ylabel('Volume')
 
-            # Plot Volume vs Close
-            figure3 = plt.figure()
-            plt.plot(close, volume, 'b.')
-            plt.xlabel('Close')
-            plt.ylabel('Volume')
+                canvas1 = FigureCanvas(figure1)
+                canvas2 = FigureCanvas(figure2)
+                canvas3 = FigureCanvas(figure3)
 
-            canvas1 = FigureCanvas(figure1)
-            canvas2 = FigureCanvas(figure2)
-            canvas3 = FigureCanvas(figure3)
+                # Create QGraphicsScene objects
+                scene1 = QGraphicsScene()
+                scene2 = QGraphicsScene()
+                scene3 = QGraphicsScene()
 
-            # Create QGraphicsScene objects
-            scene1 = QGraphicsScene()
-            scene2 = QGraphicsScene()
-            scene3 = QGraphicsScene()
+                # Add the FigureCanvas objects to the QGraphicsScene objects
+                scene1.addWidget(canvas1)
+                scene2.addWidget(canvas2)
+                scene3.addWidget(canvas3)
 
-            # Add the FigureCanvas objects to the QGraphicsScene objects
-            scene1.addWidget(canvas1)
-            scene2.addWidget(canvas2)
-            scene3.addWidget(canvas3)
+                # Set the QGraphicsScene objects as the scene for the respective QGraphicsView widgets
+                self.graphicsView_3.setScene(scene1)
+                self.graphicsView_4.setScene(scene2)
+                self.graphicsView_5.setScene(scene3)
+            except ValueError:
+                self.lineEdit.setText("Invalid File format")
 
-            # Set the QGraphicsScene objects as the scene for the respective QGraphicsView widgets
-            self.graphicsView_3.setScene(scene1)
-            self.graphicsView_4.setScene(scene2)
-            self.graphicsView_5.setScene(scene3)
 
     def predictClicked(self):
         # Get the values from the spin boxes

@@ -9,6 +9,7 @@ class MyWindow(QMainWindow):
         # Create an instance of the generated UI class
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        
 
 
 if __name__ == "__main__":
