@@ -1,14 +1,19 @@
-import pandas as pd
-from sklearn.linear_model import LinearRegression
+from PyQt5.QtWidgets import QApplication, QMainWindow
+from StockGod import Ui_MainWindow
 
-import pickle
-model = LinearRegression()
-# Load the trained model
-with open('trained_model.pkl', 'rb') as file:
-    model = pickle.load(file)
 
-prediction_data = pd.read_csv('./prediction.csv')
-X_pred = prediction_data[[  'High', 'Low', 'Volume']]  
+class MyWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
 
-prediction = model.predict(prediction_data);
-print(prediction)
+        # Create an instance of the generated UI class
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self)
+
+
+if __name__ == "__main__":
+    app = QApplication([])
+    window = MyWindow()
+    window.show()
+    app.exec()
+
