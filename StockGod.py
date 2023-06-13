@@ -13,7 +13,7 @@ import pickle
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1240, 900)
+        MainWindow.resize(1240, 980)
         MainWindow.setAutoFillBackground(False)
         MainWindow.setStyleSheet("background-color:rgb(33, 47, 63);\n"
                                  "color:#FFF;")
@@ -50,15 +50,15 @@ class Ui_MainWindow(object):
         self.doubleSpinBox_3.setDecimals(8)
 
         self.label_2 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(40, 650, 41, 21))
+        self.label_2.setGeometry(QtCore.QRect(40, 650, 51, 21))
         self.label_2.setStyleSheet("")
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(40, 750, 51, 21))
+        self.label_3.setGeometry(QtCore.QRect(40, 750, 81, 21))
         self.label_3.setStyleSheet("color:#FFF;")
         self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_4.setGeometry(QtCore.QRect(40, 850, 41, 21))
+        self.label_4.setGeometry(QtCore.QRect(40, 850, 51, 21))
         self.label_4.setObjectName("label_4")
         self.lineEdit = QtWidgets.QLineEdit(parent=self.centralwidget)
         self.lineEdit.setGeometry(QtCore.QRect(250, 850, 211, 22))
@@ -77,15 +77,15 @@ class Ui_MainWindow(object):
                                       "border-radius:10px;")
         self.pushButton.setObjectName("pushButton")
         self.textEdit = QtWidgets.QTextEdit(parent=self.centralwidget)
-        self.textEdit.setGeometry(QtCore.QRect(770, 650, 251, 31))
+        self.textEdit.setGeometry(QtCore.QRect(770, 650, 300, 31))
         self.textEdit.setStyleSheet("border:none;")
         self.textEdit.setObjectName("textEdit")
         self.textEdit_2 = QtWidgets.QTextEdit(parent=self.centralwidget)
-        self.textEdit_2.setGeometry(QtCore.QRect(770, 750, 251, 31))
+        self.textEdit_2.setGeometry(QtCore.QRect(770, 750, 300, 31))
         self.textEdit_2.setStyleSheet("border:none;")
         self.textEdit_2.setObjectName("textEdit_2")
         self.pushButton_2 = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_2.setGeometry(QtCore.QRect(850, 850, 93, 28))
+        self.pushButton_2.setGeometry(QtCore.QRect(850, 850, 110, 28))
         self.pushButton_2.setStyleSheet("background-color:#FFF;\n"
                                         "color:#212f3f;\n"
                                         "border-radius: 10px;")
@@ -157,21 +157,21 @@ class Ui_MainWindow(object):
 
                 # Plot High vs Close
                 figure1 = plt.figure()
-                plt.plot(close, high, 'r.')
-                plt.xlabel('Close')
-                plt.ylabel('High')
+                plt.plot(high, close, 'r.')
+                plt.xlabel('High')
+                plt.ylabel('Close')
 
                 # Plot Low vs Close
                 figure2 = plt.figure()
-                plt.plot(close, low, 'g.')
-                plt.xlabel('Close')
-                plt.ylabel('Low')
+                plt.plot(low, close, 'g.')
+                plt.ylabel('Close')
+                plt.xlabel('Low')
 
                 # Plot Volume vs Close
                 figure3 = plt.figure()
-                plt.plot(close, volume, 'b.')
-                plt.xlabel('Close')
-                plt.ylabel('Volume')
+                plt.plot(volume, close, 'b.')
+                plt.ylabel('Close')
+                plt.xlabel('Volume')
 
                 canvas1 = FigureCanvas(figure1)
                 canvas2 = FigureCanvas(figure2)
@@ -214,21 +214,21 @@ class Ui_MainWindow(object):
         self.lineEdit.setText(str(close[0]))
         # Plot the graphs
         figure1 = plt.figure()
-        plt.plot(close, high, 'r.')
-        plt.xlabel('Close')
-        plt.ylabel('High')
+        plt.plot(high, close, 'r.')
+        plt.ylabel('Close')
+        plt.xlabel('High')
 
         # Plot Low vs Close
         figure2 = plt.figure()
-        plt.plot(close, low, 'g.')
-        plt.xlabel('Close')
-        plt.ylabel('Low')
+        plt.plot(low, close, 'g.')
+        plt.ylabel('Close')
+        plt.xlabel('Low')
 
         # Plot Volume vs Close
         figure3 = plt.figure()
-        plt.plot(close, volume, 'b.')
-        plt.xlabel('Close')
-        plt.ylabel('Volume')
+        plt.plot(volume, close, 'b.')
+        plt.ylabel('Close')
+        plt.xlabel('Volume')
 
         canvas1 = FigureCanvas(figure1)
         canvas2 = FigureCanvas(figure2)
